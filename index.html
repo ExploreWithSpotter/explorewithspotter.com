@@ -37,6 +37,11 @@
               600: "#bf4600",
               700: "#8f3400",
             },
+            spotter: {
+              500: "#2B8A5A",
+              600: "#23764A",
+              700: "#1A5D3A",
+            },
           },
           fontFamily: {
             sans: ["Nunito", "ui-sans-serif", "system-ui", "sans-serif"],
@@ -49,7 +54,7 @@
 </head>
 
 <body class="bg-soil-50 text-soil-900 font-sans antialiased">
-  <header class="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-soil-200">
+  <header class="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-soil-100">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-8">
       <a href="#top" class="font-serif text-2xl font-bold text-soil-900">Spotter</a>
       <div class="space-x-6 text-sm md:text-base">
@@ -63,23 +68,20 @@
 
   <main id="top" class="relative overflow-hidden">
     <section class="relative px-6 pt-16 pb-20 md:px-8">
-      <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-accent-100 via-soil-50 to-soil-100"></div>
+      <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-accent-50 via-soil-50 to-soil-100"></div>
       <div class="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
         <div>
-          <p class="mb-4 inline-block rounded-full bg-soil-900 px-4 py-2 text-xs font-semibold tracking-wide text-soil-50">
-            Wildlife-focused for real zoos
-          </p>
           <h1 class="font-serif text-5xl font-bold leading-tight md:text-6xl">
-            Turn every zoo visit into a safari diary.
+            Turn every zoo visit into a safari.
           </h1>
           <p class="mt-6 max-w-xl text-lg leading-relaxed text-soil-800">
             Spotter helps families, students, and animal lovers browse exhibits, snap photos, identify species instantly on-device, and keep every observation organized by animal, habitat, and date.
           </p>
           <div id="features" class="mt-9 flex flex-wrap gap-4">
-            <a href="#download" class="rounded-full bg-soil-900 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-soil-800">
+            <a href="#download" class="rounded-full bg-spotter-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-spotter-600">
               Explore features
             </a>
-            <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer" class="rounded-full border border-soil-900 px-6 py-3 text-sm font-bold uppercase tracking-wide text-soil-900 transition hover:bg-soil-900 hover:text-white">
+            <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer" class="rounded-full border border-spotter-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-spotter-700 transition hover:bg-spotter-500 hover:text-white">
               App Store
             </a>
           </div>
@@ -88,19 +90,19 @@
           <h2 class="font-serif text-2xl font-bold">Quick snapshot</h2>
           <ul class="mt-6 space-y-4 text-soil-800">
             <li class="flex gap-3">
-              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent-500"></span>
+              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-spotter-500"></span>
               Browse living collections and themed enclosures before arriving at the zoo.
             </li>
             <li class="flex gap-3">
-              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent-500"></span>
+              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-spotter-500"></span>
               Point your camera and capture high-quality photos in seconds.
             </li>
             <li class="flex gap-3">
-              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent-500"></span>
+              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-spotter-500"></span>
               Run classification locally so your phone works without spotty Wi-Fi.
             </li>
             <li class="flex gap-3">
-              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent-500"></span>
+              <span class="mt-1 h-2.5 w-2.5 rounded-full bg-spotter-500"></span>
               Organize sightings into journals and share your favorites.
             </li>
           </ul>
@@ -182,10 +184,10 @@
             </p>
           </div>
           <div class="flex w-full flex-wrap gap-3 md:w-auto">
-            <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-soil-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-soil-800">
+            <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full bg-spotter-500 px-5 py-3 text-sm font-bold text-white transition hover:bg-spotter-600">
               Download on the App Store
             </a>
-            <a href="https://play.google.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-soil-900 px-5 py-3 text-sm font-bold text-soil-900 transition hover:bg-soil-900 hover:text-white">
+            <a href="https://play.google.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-spotter-500 px-5 py-3 text-sm font-bold text-spotter-700 transition hover:bg-spotter-500 hover:text-white">
               Get it on Google Play
             </a>
           </div>
@@ -212,114 +214,114 @@
             <section id="privacy-policy" class="rounded-xl border border-soil-200 bg-white p-6">
               <h3 class="text-2xl font-serif font-bold">Privacy Policy</h3>
               <p class="mt-2 text-sm text-soil-700">Last updated: February 25, 2026</p>
-                <p class="mt-4 text-sm leading-relaxed text-soil-800">
-                  Spotter is designed for privacy-conscious wildlife exploration. The app runs animal photo classification locally on your device, keeps location and media data under your control, and avoids unnecessary sharing.
+              <p class="mt-4 text-sm leading-relaxed text-soil-800">
+                Spotter is designed for privacy-conscious wildlife exploration. The app runs animal photo classification locally on your device, keeps location and media data under your control, and avoids unnecessary sharing.
+              </p>
+              <div class="mt-4 space-y-5 text-sm text-soil-800">
+                <div>
+                  <h4 class="font-semibold">Third Party Interactions</h4>
+                  <p class="mt-2 leading-relaxed">
+                    Spotter uses a Wildlife Detection Machine Learning Model to provide suggested photo classifications. This model is downloaded and run on the user’s device.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">What we collect</h4>
+                  <ul class="mt-2 list-disc pl-5 space-y-1">
+                    <li>
+                      At this time, Spotter does not collect or store any user data. User IP addresses may be gathered by a third party to download the Machine Learning model for photo classification.
+                    </li>
+                    <li>All photos, media, and observations made by users are stored on the user&apos;s device.</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold">How we use it</h4>
+                  <p class="mt-2 leading-relaxed">
+                    Spotter does not use any user data for any purpose.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Your rights</h4>
+                  <ul class="mt-2 list-disc pl-5 space-y-1">
+                    <li>Users can delete photos and observations at any time from the Spotter app.</li>
+                    <li>Users can delete the Spotter app at any time.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section id="terms-of-service" class="rounded-xl border border-soil-200 bg-white p-6">
+              <h3 class="text-2xl font-serif font-bold">Terms of Service</h3>
+              <p class="mt-2 text-sm text-soil-700">Last updated: February 25, 2026</p>
+              <div class="mt-4 space-y-5 text-sm text-soil-800">
+                <p>
+                  Spotter is a privacy focused, wildlife identification Application. By accessing these Terms of Use, along with Spotter&apos;s Privacy Policy, you agree to be bound by the Terms of this App. If you, as a User of the App do not agree with these Terms, or if you do not agree with the Privacy Policy, please do not use this App. By using this App, you acknowledge that you are 18 years of age or older, or are an emancipated minor, or possess parental guardian consent to use this App.
                 </p>
-                <div class="mt-4 space-y-5 text-sm text-soil-800">
-                  <div>
-                    <h4 class="font-semibold">Third Party Interactions</h4>
-                    <p class="mt-2 leading-relaxed">
-                      Spotter uses a Wildlife Detection Machine Learning Model to provide suggested photo classifications. This model is downloaded and run on the user’s device.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold">What we collect</h4>
-                    <ul class="mt-2 list-disc pl-5 space-y-1">
-                      <li>
-                        At this time, Spotter does not collect or store any user data. User IP addresses may be gathered by a third party to download the Machine Learning model for photo classification.
-                      </li>
-                      <li>All photos, media, and observations made by users are stored on the user&apos;s device.</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold">How we use it</h4>
-                    <p class="mt-2 leading-relaxed">
-                      Spotter does not use any user data for any purpose.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold">Your rights</h4>
-                    <ul class="mt-2 list-disc pl-5 space-y-1">
-                      <li>Users can delete photos and observations at any time from the Spotter app.</li>
-                      <li>Users can delete the Spotter app at any time.</li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-              <section id="terms-of-service" class="rounded-xl border border-soil-200 bg-white p-6">
-                <h3 class="text-2xl font-serif font-bold">Terms of Service</h3>
-                <p class="mt-2 text-sm text-soil-700">Last updated: February 25, 2026</p>
-                <div class="mt-4 space-y-5 text-sm text-soil-800">
-                  <p>
-                    Spotter is a privacy focused, wildlife identification Application. By accessing these Terms of Use, along with Spotter&apos;s Privacy Policy, you agree to be bound by the Terms of this App. If you, as a User of the App do not agree with these Terms, or if you do not agree with the Privacy Policy, please do not use this App. By using this App, you acknowledge that you are 18 years of age or older, or are an emancipated minor, or possess parental guardian consent to use this App.
+                <p>
+                  By using Spotter, you agree to use the App responsibly while on-site and to follow all posted facility rules and conservation best practices.
+                </p>
+                <div>
+                  <h4 class="font-semibold">Acceptance of Terms and Conditions and Privacy Policy</h4>
+                  <p class="mt-2 leading-relaxed">
+                    By accessing and browsing this App, you acknowledge that you have read, understand and accept these Terms, including Spotter&apos;s Privacy Policy and that you agree to be bound by these Terms and the Privacy Policy. Spotter reserves the right to change these Terms and the Privacy Policy at any time and for any reason at its sole discretion. Such changes may be made without notice and are effective immediately upon posting. Users are encouraged to visit this page from time to time to review the most current Terms and Privacy Policy. Your continued use of the App after new or revised Terms are effective indicates you have read and understand and agree to be bound by those new or revised Terms.
                   </p>
-                  <p>
-                    By using Spotter, you agree to use the App responsibly while on-site and to follow all posted facility rules and conservation best practices.
-                  </p>
-                  <div>
-                    <h4 class="font-semibold">Acceptance of Terms and Conditions and Privacy Policy</h4>
-                    <p class="mt-2 leading-relaxed">
-                      By accessing and browsing this App, you acknowledge that you have read, understand and accept these Terms, including Spotter&apos;s Privacy Policy and that you agree to be bound by these Terms and the Privacy Policy. Spotter reserves the right to change these Terms and the Privacy Policy at any time and for any reason at its sole discretion. Such changes may be made without notice and are effective immediately upon posting. Users are encouraged to visit this page from time to time to review the most current Terms and Privacy Policy. Your continued use of the App after new or revised Terms are effective indicates you have read and understand and agree to be bound by those new or revised Terms.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold">User Accounts</h4>
-                    <p class="mt-2 leading-relaxed">
-                      No registration, login, or membership is required to use the features on the App.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold">Trademarks</h4>
-                    <p class="mt-2 leading-relaxed">
-                      Many of the names, titles, trademarks, service marks, and logos displayed on the App are registered or unregistered marks of various zoos and wildlife agencies. You may not use any Trademarks displayed on the App without the express written permission of the third party that owns the Trademark and you acknowledge and agree that nothing on this App should be construed as granting, by implication, estoppel, or otherwise, any right or license to use any Trademarks displayed on the App. Any unauthorized use of the Trademarks, except as authorized in these Terms, is expressly prohibited.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold">User Generated Content</h4>
-                    <p class="mt-2 leading-relaxed">
-                      All content generated by users is only viewable by the user who created it. Other users of the App cannot see any photos, media, or observations you create. However, the following types of User Content are strictly prohibited:
-                    </p>
-                    <ul class="mt-2 list-disc pl-5 space-y-1">
-                      <li>User Content that is threatening, defamatory, obscene, abusive, false, or misleading or harmful to minors;</li>
-                      <li>User Content that infringes on the rights of a third party such as intellectual property rights, publicity rights, or privacy rights;</li>
-                      <li>User Content that could violate any law or regulation.</li>
-                    </ul>
-                    <p class="mt-2 leading-relaxed">
-                      You are solely responsible for the User Content you submit.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold">Disclaimer of Warranties and Limitation of Liability</h4>
-                    <p class="mt-2 leading-relaxed">
-                      Spotter disclaims all warranties of any kind, whether express or implied. We do not warrant that the App will provide continuous, prompt, secure, or error-free service and we assume no liability for any errors or omissions, including the inaccuracy of any Content, or for any damages or losses that you or any third party may incur as a result of the unavailability of the App or any portion thereof. On-device classification results are suggestions and may include errors. Spotter is not liable for misidentifications, lost data from device issues, or incidents that occur during your real-world visits. Spotter shall have no liability for any damages, including without limitation, any direct, indirect, incidental, compensatory, punitive, special, or consequential damages, even if advised of the possibility of such damages, arising from or related to use of this App or its Content.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold">Termination, Modifications and Content Removal</h4>
-                    <p class="mt-2 leading-relaxed">
-                      We may, at any time: (a) modify, suspend, or terminate the operation of or access to the App or any portion thereof for any reason; (b) modify or change the App for any reason; (c) remove or change Content on this App at any time in our sole discretion; or (d) interrupt the operation of the App for any reason. Your access to, and use of the App, may be terminated by you or by us at any time for any reason. Any provision of these Terms of Use which, by its nature should survive, will survive termination of these Terms, including, but not limited to, all obligations relating to your use of the Content and your license to us to use User Content.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold">Indemnification</h4>
-                    <p class="mt-2 leading-relaxed">
-                      You agree to indemnify, defend, and hold Spotter harmless from and against all claims, causes of action, expenses, reasonable attorneys&apos; fees, losses, and damages, arising from or relating to your use of the App or any of the Content on the App.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold">Jurisdiction, Venue and Choice of Law</h4>
-                    <p class="mt-2 leading-relaxed">
-                      These Terms shall be governed and construed in accordance with the laws of the Commonwealth of Pennsylvania, without regard to conflict of law principles. Any case, controversy, suit, action, or proceeding arising out of, in connection with, or related to these Terms of Use, may only be brought in a federal or state court located in Westmoreland County, Pennsylvania and the parties hereby waive any objection that they may have to personal jurisdiction or venue in these courts.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold">Severability and Waiver</h4>
-                    <p class="mt-2 leading-relaxed">
-                      If any provision of these Terms is held to be invalid, void, or unenforceable, the remaining provisions shall nevertheless continue in full force and effect. Spotter&apos;s failure to exercise or enforce any rights or provision of these Terms shall not constitute a waiver of such right or provision.
-                    </p>
-                  </div>
                 </div>
-              </section>
+                <div>
+                  <h4 class="font-semibold">User Accounts</h4>
+                  <p class="mt-2 leading-relaxed">
+                    No registration, login, or membership is required to use the features on the App.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Trademarks</h4>
+                  <p class="mt-2 leading-relaxed">
+                    Many of the names, titles, trademarks, service marks, and logos displayed on the App are registered or unregistered marks of various zoos and wildlife agencies. You may not use any Trademarks displayed on the App without the express written permission of the third party that owns the Trademark and you acknowledge and agree that nothing on this App should be construed as granting, by implication, estoppel, or otherwise, any right or license to use any Trademarks displayed on the App. Any unauthorized use of the Trademarks, except as authorized in these Terms, is expressly prohibited.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">User Generated Content</h4>
+                  <p class="mt-2 leading-relaxed">
+                    All content generated by users is only viewable by the user who created it. Other users of the App cannot see any photos, media, or observations you create. However, the following types of User Content are strictly prohibited:
+                  </p>
+                  <ul class="mt-2 list-disc pl-5 space-y-1">
+                    <li>User Content that is threatening, defamatory, obscene, abusive, false, or misleading or harmful to minors;</li>
+                    <li>User Content that infringes on the rights of a third party such as intellectual property rights, publicity rights, or privacy rights;</li>
+                    <li>User Content that could violate any law or regulation.</li>
+                  </ul>
+                  <p class="mt-2 leading-relaxed">
+                    You are solely responsible for the User Content you submit.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Disclaimer of Warranties and Limitation of Liability</h4>
+                  <p class="mt-2 leading-relaxed">
+                    Spotter disclaims all warranties of any kind, whether express or implied. We do not warrant that the App will provide continuous, prompt, secure, or error-free service and we assume no liability for any errors or omissions, including the inaccuracy of any Content, or for any damages or losses that you or any third party may incur as a result of the unavailability of the App or any portion thereof. On-device classification results are suggestions and may include errors. Spotter is not liable for misidentifications, lost data from device issues, or incidents that occur during your real-world visits. Spotter shall have no liability for any damages, including without limitation, any direct, indirect, incidental, compensatory, punitive, special, or consequential damages, even if advised of the possibility of such damages, arising from or related to use of this App or its Content.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Termination, Modifications and Content Removal</h4>
+                  <p class="mt-2 leading-relaxed">
+                    We may, at any time: (a) modify, suspend, or terminate the operation of or access to the App or any portion thereof for any reason; (b) modify or change the App for any reason; (c) remove or change Content on this App at any time in our sole discretion; or (d) interrupt the operation of the App for any reason. Your access to, and use of the App, may be terminated by you or by us at any time for any reason. Any provision of these Terms of Use which, by its nature should survive, will survive termination of these Terms, including, but not limited to, all obligations relating to your use of the Content and your license to us to use User Content.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Indemnification</h4>
+                  <p class="mt-2 leading-relaxed">
+                    You agree to indemnify, defend, and hold Spotter harmless from and against all claims, causes of action, expenses, reasonable attorneys&apos; fees, losses, and damages, arising from or relating to your use of the App or any of the Content on the App.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Jurisdiction, Venue and Choice of Law</h4>
+                  <p class="mt-2 leading-relaxed">
+                    These Terms shall be governed and construed in accordance with the laws of the Commonwealth of Pennsylvania, without regard to conflict of law principles. Any case, controversy, suit, action, or proceeding arising out of, in connection with, or related to these Terms of Use, may only be brought in a federal or state court located in Westmoreland County, Pennsylvania and the parties hereby waive any objection that they may have to personal jurisdiction or venue in these courts.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Severability and Waiver</h4>
+                  <p class="mt-2 leading-relaxed">
+                    If any provision of these Terms is held to be invalid, void, or unenforceable, the remaining provisions shall nevertheless continue in full force and effect. Spotter&apos;s failure to exercise or enforce any rights or provision of these Terms shall not constitute a waiver of such right or provision.
+                  </p>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
