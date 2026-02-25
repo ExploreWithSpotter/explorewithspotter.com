@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Spotter — Wildlife Safari in Your Pocket</title>
+    <meta
+      name="description"
+      content="Spotter helps zoo visitors explore collections, capture animal photos, identify species on-device, and organize observations."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              soil: {
+                50: "#f6f1ea",
+                100: "#e8dcc5",
+                200: "#d9c5a0",
+                300: "#b69b6d",
+                400: "#9a7945",
+                500: "#7f5b2f",
+                600: "#654426",
+                700: "#4a341c",
+                800: "#2f2212",
+                900: "#1a1209",
+              },
+              accent: {
+                50: "#fff3ec",
+                100: "#ffd9c2",
+                200: "#ffb68a",
+                300: "#ff8a48",
+                400: "#ff6a17",
+                500: "#e95700",
+                600: "#bf4600",
+                700: "#8f3400",
+              },
+            },
+            fontFamily: {
+              sans: ["Nunito", "ui-sans-serif", "system-ui", "sans-serif"],
+              serif: ["Merriweather", "Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-soil-50 text-soil-900 font-sans antialiased">
+    <header class="sticky top-0 z-20 bg-white/90 backdrop-blur border-b border-soil-200">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-8">
+        <a href="#top" class="font-serif text-2xl font-bold text-soil-900">Spotter</a>
+        <div class="space-x-6 text-sm md:text-base">
+          <a href="#features" class="text-soil-700 hover:text-soil-900">Features</a>
+          <a href="#journey" class="text-soil-700 hover:text-soil-900">How it works</a>
+          <a href="#download" class="text-soil-700 hover:text-soil-900">Get the app</a>
+          <a href="#legal" class="text-soil-700 hover:text-soil-900">Legal</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top" class="relative overflow-hidden">
+      <section class="relative px-6 pt-16 pb-20 md:px-8">
+        <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-accent-100 via-soil-50 to-soil-100"></div>
+        <div class="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+          <div>
+            <p class="mb-4 inline-block rounded-full bg-soil-900 px-4 py-2 text-xs font-semibold tracking-wide text-soil-50">
+              Wildlife-focused for real zoos
+            </p>
+            <h1 class="font-serif text-5xl font-bold leading-tight md:text-6xl">
+              Turn every zoo visit into a safari diary.
+            </h1>
+            <p class="mt-6 max-w-xl text-lg leading-relaxed text-soil-800">
+              Spotter helps families, students, and animal lovers browse exhibits, snap photos, identify species instantly on-device, and keep every observation organized by animal, habitat, and date.
+            </p>
+            <div id="features" class="mt-9 flex flex-wrap gap-4">
+              <a
+                href="#download"
+                class="rounded-full bg-soil-900 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-soil-800"
+              >
+                Explore features
+              </a>
+              <a
+                href="https://apps.apple.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="rounded-full border border-soil-900 px-6 py-3 text-sm font-bold uppercase tracking-wide text-soil-900 transition hover:bg-soil-900 hover:text-white"
+              >
+                App Store
+              </a>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-soil-200 bg-white/90 p-8 shadow-xl">
+            <h2 class="font-serif text-2xl font-bold">Quick snapshot</h2>
+            <ul class="mt-6 space-y-4 text-soil-800">
+              <li class="flex gap-3">
+                <span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent-500"></span>
+                Browse living collections and themed enclosures before arriving at the zoo.
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent-500"></span>
+                Point your camera and capture high-quality photos in seconds.
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent-500"></span>
+                Run classification locally so your phone works without spotty Wi-Fi.
+              </li>
+              <li class="flex gap-3">
+                <span class="mt-1 h-2.5 w-2.5 rounded-full bg-accent-500"></span>
+                Organize sightings into journals and share your favorites.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6 py-14 md:px-8" aria-label="Spotter capabilities">
+        <div class="mx-auto max-w-6xl">
+          <h2 class="font-serif text-4xl font-bold">What Spotter does</h2>
+          <p class="mt-3 max-w-3xl text-soil-800">
+            A modern take on the joy of animal spotting. Spotter blends guided browsing with playful discovery.
+          </p>
+          <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <article class="rounded-2xl border border-soil-200 bg-white p-6 shadow-sm">
+              <h3 class="text-xl font-bold">Browse Zoo Collections</h3>
+              <p class="mt-3 text-sm leading-relaxed text-soil-800">
+                Explore curated species lists by zoo, exhibit, habitat, conservation status, and activity level.
+              </p>
+            </article>
+            <article class="rounded-2xl border border-soil-200 bg-white p-6 shadow-sm">
+              <h3 class="text-xl font-bold">Capture Photos</h3>
+              <p class="mt-3 text-sm leading-relaxed text-soil-800">
+                Snap clean photos of animals quickly with one-handed workflows and no post-processing needed.
+              </p>
+            </article>
+            <article class="rounded-2xl border border-soil-200 bg-white p-6 shadow-sm">
+              <h3 class="text-xl font-bold">On-device Classification</h3>
+              <p class="mt-3 text-sm leading-relaxed text-soil-800">
+                Identify animals instantly with a tiny on-device model for privacy-first performance.
+              </p>
+            </article>
+            <article class="rounded-2xl border border-soil-200 bg-white p-6 shadow-sm">
+              <h3 class="text-xl font-bold">Organize Observations</h3>
+              <p class="mt-3 text-sm leading-relaxed text-soil-800">
+                Tag, sort, and revisit sightings with notes, location, and visit context all in one place.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="journey" class="px-6 py-14 md:px-8">
+        <div class="mx-auto grid max-w-6xl gap-8 md:grid-cols-[1.2fr,0.8fr]">
+          <div class="rounded-3xl bg-soil-900 px-8 py-10 text-soil-50">
+            <p class="text-sm uppercase tracking-[0.2em] text-soil-100">From entrance to exhibit</p>
+            <h2 class="mt-3 font-serif text-4xl font-bold">A seamless adventure in three steps</h2>
+            <ol class="mt-6 space-y-4 text-soil-100">
+              <li class="rounded-xl bg-white/10 p-4">
+                <span class="font-bold">1. Pick a collection.</span> Choose a zoo and browse guided groups by species and habitat.
+              </li>
+              <li class="rounded-xl bg-white/10 p-4">
+                <span class="font-bold">2. Spot and snap.</span> Capture photos from your phone as you walk through the park.
+              </li>
+              <li class="rounded-xl bg-white/10 p-4">
+                <span class="font-bold">3. Classify and save.</span> Confirm species names and build your own observation log.
+              </li>
+            </ol>
+          </div>
+          <div class="rounded-3xl border border-soil-200 bg-white p-8">
+            <h3 class="font-serif text-2xl font-bold">Built for every visit</h3>
+            <p class="mt-4 text-sm leading-relaxed text-soil-800">
+              Whether your signal drops in dense enclosures or you want an offline-first app for short school trips, Spotter keeps working locally and stays fast.
+            </p>
+            <p class="mt-4 text-sm leading-relaxed text-soil-800">
+              Keep your privacy intact with local classification, local storage of observations, and minimal required permissions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="px-6 py-14 md:px-8">
+        <div class="mx-auto max-w-6xl rounded-[2rem] border border-soil-200 bg-white p-10 shadow-lg">
+          <div class="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+            <div>
+              <h2 class="font-serif text-4xl font-bold">Ready to start spotting?</h2>
+              <p class="mt-3 max-w-xl text-soil-800">
+                Download Spotter and start your next zoo visit with a guided, curiosity-driven checklist.
+              </p>
+            </div>
+            <div class="flex w-full flex-wrap gap-3 md:w-auto">
+              <a
+                href="https://apps.apple.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center rounded-full bg-soil-900 px-5 py-3 text-sm font-bold text-white transition hover:bg-soil-800"
+              >
+                Download on the App Store
+              </a>
+              <a
+                href="https://play.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center rounded-full border border-soil-900 px-5 py-3 text-sm font-bold text-soil-900 transition hover:bg-soil-900 hover:text-white"
+              >
+                Get it on Google Play
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="legal" class="px-6 pb-16 md:px-8">
+        <div class="mx-auto max-w-6xl">
+          <div class="rounded-2xl border border-soil-200 bg-white p-8 md:p-10">
+            <h2 class="font-serif text-3xl font-bold">Legal</h2>
+            <p class="mt-3 text-soil-800">
+              Before you explore, review Spotter’s official policies.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-4">
+              <a href="/privacy-policy.html" class="rounded-lg border border-soil-300 px-4 py-2 text-sm font-semibold text-soil-900 hover:bg-soil-50">
+                Privacy Policy
+              </a>
+              <a href="/terms-of-service.html" class="rounded-lg border border-soil-300 px-4 py-2 text-sm font-semibold text-soil-900 hover:bg-soil-50">
+                Terms of Service
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-soil-200 bg-white px-6 py-8 md:px-8">
+      <div class="mx-auto flex max-w-6xl items-center justify-between text-sm text-soil-700">
+        <p>© 2026 Spotter. Built for curious wildlife explorers.</p>
+        <p>
+          <a href="/privacy-policy.html" class="underline underline-offset-4">Privacy</a>
+          ·
+          <a href="/terms-of-service.html" class="underline underline-offset-4">Terms</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
